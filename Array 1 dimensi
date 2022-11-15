@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+struct data{
+
+ string judul, Nama_pengarang,Penerbit;
+ int Jumlah_Halaman, Tahun_Terbit;
+};
+  int main(){
+  
+  int n;
+  data buku[5]; // deklarasi aray sebanyak 5 dan variabel struct
+  cout <<endl;
+  for (int k=0; k<5; k++){ // akan ada 5 data buku
+  
+  cout<<"Buku ke-"<<k+1<<"\n";
+  cout<<endl;
+  cout<<"Judul :"; getline (cin,buku[k]. judul);
+  cout<<"Nama pengarang :"; getline (cin,buku[k]. Nama_pengarang);
+  cout<<"Jumlah Halaman :"; cin>>buku[k]. Jumlah_Halaman;
+  cout<<"Penerbit :"; cin.ignore(); getline (cin,buku[k]. Penerbit);
+  cout<<"Tahun Terbit :";  cin,buku[k]. Tahun_Terbit;
+  
+}
+}
